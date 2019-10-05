@@ -88,7 +88,7 @@ if( (isset($_SESSION["userId"])) && ($_SESSION["role"] != 'student') ) {
     console.log(response);                   // The current login status of the person.
     if (response.status === 'connected') {   // Logged into your webpage and Facebook.
       testAPI();
-      window.location = "students-dashboard.php"  
+      window.location.href = " https://artemis-mini-classroom.herokuapp.com/students-dashboard.php"  
     } else {                                 // Not logged into your webpage or we are unable to tell.
       document.getElementById('status').innerHTML = 'Please log ' +
         'into this webpage.';
